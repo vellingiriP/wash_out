@@ -1,6 +1,4 @@
-xml.tag! "SOAP-ENV:Envelope", "xmlns:soap" => 'http://schemas.xmlsoap.org/soap/envelope/',
-                          "xmlns:xsd" => 'http://www.w3.org/2001/XMLSchema',
-                          "xmlns:ns2" => @namespace do
+xml.tag! "SOAP-ENV:Envelope", "xmlns:SOAP-ENV" => 'http://schemas.xmlsoap.org/soap/envelope/' do
   if !header.nil?
     xml.tag! "SOAP-ENV:Header" do
       xml.tag! "ns2:#{@action_spec[:response_tag]}" do
