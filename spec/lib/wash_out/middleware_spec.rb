@@ -23,7 +23,7 @@ describe WashOut::Middleware do
     expect(result[1]['Content-Type']).to eq 'text/xml'
     msg = result[2][0]
     expect(msg).to include 'Error parsing SOAP Request XML'
-    expect(msg).to include 'soap:Fault'
+    expect(msg).to include 'SOAP-ENV:Fault'
     expect(msg).not_to include __FILE__
     
     env['rack.input'] = double 'passenger-input', {:read => '<hi>'}
