@@ -139,9 +139,9 @@ class RumbasController < ApplicationController
               :to     => :add_circle
   # e.g. for a request to the 'AddCircleWithHeaderRadius' action:
   #   <soapenv:Envelope>
-  #     <soap:Header>
+  #     <SOAP-ENV:Header>
   #       <radius>12345</radius>
-  #     </soap:Header>
+  #     </SOAP-ENV:Header>
   #     <soapenv:Body>
   #       <AddCircle>
   #         <Circle radius="5.0">

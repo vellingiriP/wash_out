@@ -648,11 +648,11 @@ describe WashOut do
         expect(HTTPI.post("http://app/route/api/action", request).body).to eq <<-XML
 <?xml version="1.0" encoding="UTF-8"?>
 <SOAP-ENV:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="false">
-  <soap:Header>
+  <SOAP-ENV:Header>
     <ns2:answerResponse>
       <Value xsi:type="xsd:string">12345</Value>
     </ns2:answerResponse>
-  </soap:Header>
+  </SOAP-ENV:Header>
   <SOAP-ENV:Body>
     <ns2:answerResponse>
       <Value xsi:type="xsd:int">42</Value>
@@ -686,11 +686,11 @@ describe WashOut do
       expect(HTTPI.post("http://app/route/api/action", request).body).to eq <<-XML
 <?xml version="1.0" encoding="UTF-8"?>
 <SOAP-ENV:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="false">
-  <soap:Header>
+  <SOAP-ENV:Header>
     <ns2:answerResponse>
       <Auth xsi:type="xsd:string">12345</Auth>
     </ns2:answerResponse>
-  </soap:Header>
+  </SOAP-ENV:Header>
   <SOAP-ENV:Body>
     <ns2:answerResponse>
       <Value xsi:type="xsd:int">42</Value>
