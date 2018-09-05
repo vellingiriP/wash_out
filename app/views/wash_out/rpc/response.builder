@@ -1,4 +1,3 @@
-xml.instruct!
 xml.tag! "SOAP-ENV:Envelope", "xmlns:soap" => 'http://schemas.xmlsoap.org/soap/envelope/',
                           "xmlns:xsd" => 'http://www.w3.org/2001/XMLSchema',
                           "xmlns:xsi" => 'http://www.w3.org/2001/XMLSchema-instance',
