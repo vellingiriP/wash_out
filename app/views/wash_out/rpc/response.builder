@@ -7,7 +7,7 @@ xml.tag! "SOAP-ENV:Envelope", "xmlns:SOAP-ENV" => 'http://schemas.xmlsoap.org/so
     end
   end
   xml.tag! "SOAP-ENV:Body" do
-    xml.tag! "ns2:#{@action_spec[:response_tag]} xmlns:ns2=\"http://freightsecurity.net/datafeed/v4.0\"" do
+    xml.tag! "ns2:#{@action_spec[:response_tag]}", "xmlns:ns2"=>"http://freightsecurity.net/datafeed/v4.0" do
       wsdl_data xml, result
     end
   end
