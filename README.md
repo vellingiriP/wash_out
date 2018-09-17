@@ -6,7 +6,7 @@ WashOut is a gem that greatly simplifies creation of SOAP service providers.
 
 In your Gemfile, add this line:
 
-    gem 'wash_out', :source => "http://username:password@rubygems.fourkites.com"
+    gem 'wash_out', :source => "https://github.com/vellingiriP/wash_out.git"
 
 ## Maintainers
 
