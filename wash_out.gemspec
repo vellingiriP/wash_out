@@ -6,9 +6,9 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.summary     = "Dead simple Rails 3 SOAP server library"
   s.email       = "boris@roundlake.ru"
-  s.homepage    = "http://github.com/inossidabile/wash_out/"
+  s.homepage    = "https://github.com/vellingiriP/wash_out/"
   s.description = "Dead simple Rails 3 SOAP server library"
-  s.authors     = ['Boris Staal', 'Peter Zotov']
+  s.authors     = ['VellingiriP']
 
   s.files         = `git ls-files`.split("\n")
   s.require_paths = ["lib"]
